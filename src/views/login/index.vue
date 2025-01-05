@@ -1,12 +1,11 @@
 <template>
-    <h1>home</h1>
-    <div>{{ home }}</div>
+    <div>{{ login }}</div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const home = ref('home')
+const login = ref('login')
 </script>
 
 <style scoped>
