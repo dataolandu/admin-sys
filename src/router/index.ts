@@ -31,6 +31,8 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     Nprocess.start()
+    // 设置页面标题
+    document.title = to.meta.title as string || '后台管理系统'
     next()
 })
 
